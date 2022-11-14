@@ -1,0 +1,19 @@
+.FeedbackOptions {
+  display: flex;
+  column-gap: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  column-gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(212, 212, 212);
+}
