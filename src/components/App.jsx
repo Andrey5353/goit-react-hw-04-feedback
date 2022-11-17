@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Section } from 'components/Section';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
@@ -67,4 +68,12 @@ export const App = () => {
       {total === 0 && <Notification message={'There is no feedback'} />}
     </div>
   );
+};
+
+App.propTypes = {
+  state: PropTypes.shape({
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+  }),
 };
